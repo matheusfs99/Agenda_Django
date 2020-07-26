@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="608262e7-c8ee-4ee9-a619-722d92bcb1d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agenda/templates/agenda.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agenda/templates/model-footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agenda/templates/model-header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agenda/templates/model-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agenda/agenda/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/agenda/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agenda/agendaapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/agendaapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/agenda/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/agenda/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agenda/agendaapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/agendaapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/agendaapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/agendaapp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agenda/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,6 +18,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,6 +35,7 @@
   <component name="ProjectId" id="1fCKyN3Zdx8c6ZIR9iz6GVA7RNX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
