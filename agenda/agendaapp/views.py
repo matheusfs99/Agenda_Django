@@ -38,6 +38,13 @@ def lista_eventos(request):
     return render(request, 'agenda.html', context)
 
 @login_required(login_url='/login/')
+def lista_historico_eventos(request):
+    usuario = request.user
+    eventos = Evento.objects.filter(usuario=usuario).order_by('data_evento')
+    context = {'eventos': eventos}
+    return render(request, 'historico.html', context)
+
+@login_required(login_url='/login/')
 def evento(request):
     id_evento = request.GET.get('id')
     context = {}

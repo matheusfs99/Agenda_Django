@@ -21,6 +21,7 @@ from django.views.generic import RedirectView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('agenda/', views.lista_eventos),
+    path('historico/', views.lista_historico_eventos),
     path('agenda/lista/<int:id_usuario>', views.json_lista_evento),
     path('agenda/evento/', views.evento),
     path('agenda/evento/submit', views.submit_evento),

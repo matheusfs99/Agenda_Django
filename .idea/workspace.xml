@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="608262e7-c8ee-4ee9-a619-722d92bcb1d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/agenda/templates/historico.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agenda/agenda/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/agenda/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agenda/agenda/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/agenda/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agenda/agendaapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/agendaapp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agenda/agendaapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/agendaapp/views.py" afterDir="false" />
@@ -94,7 +94,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
