@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="608262e7-c8ee-4ee9-a619-722d92bcb1d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/agenda/templates/historico.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agenda/templates/cadastro-user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agenda/agenda/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/agenda/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agenda/agendaapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/agendaapp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agenda/agendaapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/agendaapp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agenda/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agenda/templates/agenda.html" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/templates/agenda.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/templates/historico.html" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/templates/historico.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/templates/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,5 +102,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge branch 'master' of https://github.com/matheusfs99/Agenda_Django&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;agenda/db.sqlite3&#10;#&#9;agenda/templates/agenda.html&#10;#&#9;agenda/templates/historico.html" />
+    <MESSAGE value="Front-end do sistema criado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Front-end do sistema criado" />
   </component>
 </project>

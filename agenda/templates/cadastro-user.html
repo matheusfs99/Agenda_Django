@@ -36,7 +36,7 @@
 <body>
 
     <header align="center">
-        <h1>Login</h1>
+        <h1>Cadastre-se</h1>
     </header>
 
     <div class="login-form">
@@ -45,10 +45,14 @@
             <div align="center">
                 <label>Usuário:</label>
                 <input type="text" name="username" class="form-control"/>
+                <label>Email:</label>
+                <input type="text" name="email" class="form-control"/>
                 <label>Senha:</label>
                 <input type="password" name="password" class="form-control"/><br>
-                <button type="submit" class="btn btn-light">Entrar</button><br>
-                <a href="/cadastro/">ou cadastre-se!</a>
+                <button type="submit" class="btn btn-success">Cadastrar</button>
+                <a>
+                    <button type="button" class="btn btn-danger">Cancelar</button>
+                </a>
             </div>
         </form>
     </div>

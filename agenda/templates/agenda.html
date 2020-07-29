@@ -3,21 +3,13 @@
 {% block content %}
 <div class="conteudo">
     <h2>Agendamentos</h2>
-<<<<<<< HEAD
 
-=======
-    <a href="/historico/">
-        <button type="button">Histórico de Eventos</button>
-    </a>
-    <br><br>
->>>>>>> 2d40ccce6c3477bbf8fe95b3b1e0ab61ef252897
     <a href="evento/">
         <button type="button" class="btn btn-success">Novo Evento</button>
     </a>
     <a href="/historico/">
         <button type="button" class="btn btn-info">Histórico de Eventos</button>
     </a>
-<<<<<<< HEAD
 
     <div class="lista-agend">
         <table class="table">
@@ -62,22 +54,4 @@
         </table>
     </div>
 </div>
-=======
-    <ul style="font-size: 18px">
-    {% for evento in eventos %}
-        <li>
-            <div {% if evento.get_evento_atrasado %}
-                    style="color: red;"
-                    {% endif %}
-                {% if evento.get_ultima_hora_evento %}
-                    style="color: green;"
-                {% endif %}>
-                {{ evento.titulo }} - {{ evento.get_data_evento }}
-                ( <a href="evento/?id={{ evento.id }}"> Editar</a>
-                / <a href="evento/delete/{{ evento.id }}/"> Excluir</a> )
-            </div>
-        </li>
-    {% endfor %}
-    </ul>
->>>>>>> 2d40ccce6c3477bbf8fe95b3b1e0ab61ef252897
 {% endblock %}

@@ -28,6 +28,24 @@ def submit_login(request):
             messages.error(request, 'Usuário ou senha inválido')
     return redirect('/')
 
+def cadastro_user(request):
+    return render(request, 'cadastro-user.html')
+
+def submit_cadastro_user(request):
+    if request.POST:
+        username = request.POST.get('username')
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+
+        if username is not None and email is not None and password is not None:
+            User.objects.create_user(username=username,
+                                    password=password,
+                                    email=email)
+            return redirect('/')
+        else:
+            messages.error(request, 'Preencha todos os campos')
+
+
 @login_required(login_url='/login/')
 def lista_eventos(request):
     usuario = request.user
