@@ -4,7 +4,17 @@
     {% include "model-header.html" %}
 </head>
 <body>
-    {% block content %} {% endblock %}
+<nav class="nav justify-content-end" style="margin-right: 20px; margin-top: 5px;">
+    <a href="/logout" class="btn btn-danger btn-sm">Sair</a>
+</nav>
+<div align="center">
+    <h1>Agenda</h1>
+</div>
+
+{% block content %} {% endblock %}
+<footer align="center">
     {% include "model-footer.html" %}
+</footer>
+
 </body>
 </html>

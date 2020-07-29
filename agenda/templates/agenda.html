@@ -1,14 +1,68 @@
 {% extends 'model-page.html' %}
 
 {% block content %}
+<div class="conteudo">
     <h2>Agendamentos</h2>
+<<<<<<< HEAD
+
+=======
     <a href="/historico/">
         <button type="button">Histórico de Eventos</button>
     </a>
     <br><br>
+>>>>>>> 2d40ccce6c3477bbf8fe95b3b1e0ab61ef252897
     <a href="evento/">
-        <button type="button">Novo Evento</button>
+        <button type="button" class="btn btn-success">Novo Evento</button>
     </a>
+    <a href="/historico/">
+        <button type="button" class="btn btn-info">Histórico de Eventos</button>
+    </a>
+<<<<<<< HEAD
+
+    <div class="lista-agend">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Evento</th>
+                <th>Data</th>
+                <th>Editar</th>
+                <th>Excluir</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for evento in eventos %}
+            <tr>
+                <td {% if evento.get_evento_atrasado %}
+                    style="color: red;"
+                    {% endif %}
+                    {% if evento.get_ultima_hora_evento %}
+                    style="color: green;"
+                    {% endif %}>{{ evento.titulo }}
+                </td>
+                <td {% if evento.get_evento_atrasado %}
+                    style="color: red;"
+                    {% endif %}
+                    {% if evento.get_ultima_hora_evento %}
+                    style="color: green;"
+                    {% endif %}>{{ evento.get_data_evento }}
+                </td>
+                <td>
+                    <a href="evento/?id={{ evento.id }}">
+                        <img src="https://img.icons8.com/officel/30/000000/edit-property.png"/>
+                    </a>
+                </td>
+                <td>
+                    <a href="evento/delete/{{ evento.id }}/">
+                        <img src="https://img.icons8.com/office/30/000000/delete-view.png"/>
+                    </a>
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+=======
     <ul style="font-size: 18px">
     {% for evento in eventos %}
         <li>
@@ -25,4 +79,5 @@
         </li>
     {% endfor %}
     </ul>
+>>>>>>> 2d40ccce6c3477bbf8fe95b3b1e0ab61ef252897
 {% endblock %}

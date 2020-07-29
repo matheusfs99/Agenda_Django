@@ -2,25 +2,56 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Agenda</title>
+    <style>
+        body{
+            background: #000080;
+        }
+        .login-form{
+            margin-top: 100px;
+            margin-left: 500px;
+            margin-right: 500px;
+        }
+        h1{
+            margin-top: 50px;
+            font-family: Arial;
+            color: white;
+        }
+        label{
+            font-family: Arial;
+            color: white;
+        }
+        .error-msg{
+            margin-top: 30px;
+            font-family: Arial;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Login</h1>
+    <header align="center">
+        <h1>Login</h1>
+    </header>
 
-    <form action="submit" method="POST">
-        {% csrf_token %}
-        <div align="center">
-            <label>Usuário:</label>
-            <input type="text" name="username"/>
-            <label>Senha:</label>
-            <input type="password" name="password"/>
-            <button type="submit">Entrar</button>
-        </div>
-    </form>
+    <div class="login-form">
+        <form action="submit" method="POST">
+            {% csrf_token %}
+            <div align="center">
+                <label>Usuário:</label>
+                <input type="text" name="username" class="form-control"/>
+                <label>Senha:</label>
+                <input type="password" name="password" class="form-control"/><br>
+                <button type="submit" class="btn btn-light">Entrar</button>
+            </div>
+        </form>
+    </div>
+
 
     {% for message in messages %}
-    <div align="center">
+    <br>
+    <div align="center" class="alert alert-danger">
         <strong>Erro - </strong>{{ message }}
     </div>
     {% endfor %}

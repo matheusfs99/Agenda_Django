@@ -1,6 +1,45 @@
 {% extends 'model-page.html' %}
 
 {% block content %}
+<<<<<<< HEAD
+<div class="conteudo">
+    <h2>Histórico de Eventos Agendados</h2>
+    <a href="/agenda">
+        <button type="button" class="btn btn-info">Voltar para agendar um novo evento</button>
+    </a>
+
+    <div class="lista-agend">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Evento</th>
+                <th>Data</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for evento in eventos %}
+            <tr>
+                <td {% if evento.get_evento_atrasado %}
+                    style="color: red;"
+                    {% endif %}
+                    {% if evento.get_ultima_hora_evento %}
+                    style="color: green;"
+                    {% endif %}>{{ evento.titulo }}
+                </td>
+                <td {% if evento.get_evento_atrasado %}
+                    style="color: red;"
+                    {% endif %}
+                    {% if evento.get_ultima_hora_evento %}
+                    style="color: green;"
+                    {% endif %}>{{ evento.get_data_evento }}
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+=======
     <h2>Histórico de Eventos Agendados</h2>
     <a href="/agenda">
         <button type="button">Voltar para agendar um novo evento</button>
@@ -20,4 +59,5 @@
         </li>
     {% endfor %}
     </ul>
+>>>>>>> 2d40ccce6c3477bbf8fe95b3b1e0ab61ef252897
 {% endblock %}
